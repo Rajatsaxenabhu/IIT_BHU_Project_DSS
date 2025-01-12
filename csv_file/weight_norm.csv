@@ -1,8 +1,3 @@
-index_val,Weight
-Sewage_Gap_MLD,0.34
-Water_quality_index,0.24
-Mean_Temperature_Celcius,0.15
-Mean_Rainfall_mm,0.09
-GDDP_at_Current_Price_in_Crore,0.08
-Number_of_Tourists,0.06
-Number_of_ASI_Sites,0.04
+index_val,Sewage_Gap_MLD,Water_quality_index,Mean_Temperature_Celcius,GDDP_at_Current_Price_in_Crore,Number_of_Tourists,Number_of_ASI_Sites,Mean_Rainfall_mm,
+Weight,0.34,0.24,,0.15,0.09,0.08,0.06,0.04
+

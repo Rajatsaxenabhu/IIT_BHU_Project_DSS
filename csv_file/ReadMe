@@ -1,0 +1,3 @@
+first normalise the csv file using the normalise.py file
+
+the load the data in postgresql using the load.py file

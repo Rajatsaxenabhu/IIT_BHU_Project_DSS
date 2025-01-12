@@ -1,0 +1,71 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg shadow-lg ">
+  <div class="container-fluid">
+    <!-- Logo or Title -->
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+      <img src="{% static 'Images/nav_logo.png' %}" alt="Logo" class="me-2" style="width: 40px; height: 40px;">
+      <span class="text-primary display-6" style="font-size: 1.5rem;">Decision Support System</span>
+    </a>
+
+    <!-- Toggle Button for Mobile -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Items -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto gap-2">
+        <li class="nav-item">
+          <a class="nav-link active fw-bold" style="font-size: larger;" aria-current="page" href="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" style="font-size: larger;" href="">Other Page</a>
+        </li>
+        <!-- Dropdown Menu with Hover -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle fw-bold"
+            style="font-size: larger;"
+            href="#"
+            id="dropdownMenuLink"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            
+          >
+            More Options
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Option 1</a></li>
+            <li><a class="dropdown-item" href="#">Option 2</a></li>
+            <li><a class="dropdown-item" href="#">Option 3</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" style="font-size: larger;" href="">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Custom CSS for Hover Effect -->
+<style>
+  .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .dropdown-menu {
+    display: none;
+  }
+  .navbar .dropdown-menu:hover {
+    display: block;
+  }
+</style>
